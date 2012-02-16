@@ -297,6 +297,20 @@ Note: You need to explicitly define the error_page handler for this for it to be
 
 
 
+## ajp_keep_conn
+
+
+
+__syntax:__ _ajp_keep_conn on|off;_
+
+__default:__ _ajp_keep_conn off;_
+
+__context:__ _http, server, location_
+
+This directive determines whether or not to keep the connectin alive with backend server.
+
+
+
 ## ajp_next_upstream
 
 
@@ -760,20 +774,6 @@ Grab the nginx source code from nginx.org ([http://nginx.org/](http://nginx.org/
 - Matthew Ma(东坡) _mj19821214 AT gmail DOT com_
 
 - Weibin Yao(姚伟斌) _yaoweibin AT gmail DOT com_
-
-
-
-
-
-# Acknowledgments
-
-
-
-
-
-
-
-- Thanks 李金虎(beagem@163.com) to improve the keepalive feature with this module.
 
 
 
